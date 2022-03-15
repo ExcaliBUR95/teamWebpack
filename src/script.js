@@ -5,3 +5,4 @@ import getNews from "./state/getNews";
 getNews()
 
 getCats()
+

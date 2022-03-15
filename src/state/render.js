@@ -10,6 +10,16 @@ export const render = () => {
     root.append(ulList);
   });
 };
+export const renderCommentaries = () => {
+  const root = document.getElementById("root")
+  const ulCommentaries = document.createElement('ul')
+  initialState.comments.forEach((comm) => {
+    const list_2 = document.createElement('li')
+    list_2.textContent = comm.author
+    ulCommentaries.append(list_2);
+    root.append(ulCommentaries);
+  })
+}
 
 export const renderCats = () => {
   const root = document.getElementById("root");

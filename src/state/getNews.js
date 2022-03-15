@@ -1,3 +1,4 @@
+import getComm from "./getCommentaries";
 import { render } from "./render";
 import { initialState } from "./state";
 
@@ -8,7 +9,7 @@ const getNews = () => {
     .then((news) => {
         
         initialState.news = news;
-        
+        getComm()
         render()
     })
 }
