@@ -10,3 +10,14 @@ export const render = () => {
     root.append(ulList);
   });
 };
+
+export const renderCats = () => {
+  const root = document.getElementById("root");
+  const ulCats = document.createElement("ul");
+  initialState.categories.forEach((cats) => {
+    const list_1 = document.createElement("li");
+    list_1.textContent = cats.category;
+    ulCats.append(list_1);
+    root.append(ulCats);
+  });
+};

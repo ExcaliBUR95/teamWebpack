@@ -1,6 +1,6 @@
 export const initialState = {
-  news: ['lorem'],
-  categories: ['kddks'],
+  news: [],
+  categories: [],
   comments: [],
 };
 
